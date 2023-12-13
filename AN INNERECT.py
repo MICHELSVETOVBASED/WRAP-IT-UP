@@ -1,0 +1,6 @@
+name = str(input())
+name1 = str(input())
+name2 = str(input())
+print(name2)
+print(name1)
+print(name)
