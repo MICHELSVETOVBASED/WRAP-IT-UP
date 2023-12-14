@@ -1,8 +1,8 @@
-n = int(input())
-m = [1,1]
-i = 0
-
-while i <= n-3:
-    m.append(int(m[i]+m[i+1]))
-    i+=1
-print(m)
+n = input()
+summ = []
+for i in range(0,len(n)):
+    if n[i] == 'р' and n[i+1] == 'а':
+        summ.append(i)
+if len(summ) > 0 :
+    print(*summ)
+else : print(-1)
