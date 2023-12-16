@@ -1,8 +1,12 @@
-n = input()
-summ = []
-for i in range(0,len(n)):
-    if n[i] == 'р' and n[i+1] == 'а':
-        summ.append(i)
-if len(summ) > 0 :
-    print(*summ)
-else : print(-1)
+x = int(input())
+l = []
+for i in range(x):
+    row =[]
+    for j in range(x):
+        if j == x-1:
+            row.append(5)
+        else : 
+            row.append(1)
+    l.append(row)
+for row in l:
+    print(*row)
